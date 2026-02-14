@@ -1,0 +1,5 @@
+env38/
+data/
+*.p
+*.pickle
+__pycache__/
