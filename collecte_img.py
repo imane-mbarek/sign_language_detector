@@ -6,10 +6,11 @@ DATA_DIR="./data"
 if not os.path.exists(DATA_DIR):     #si le dossier data n'existe pas, on le crée
     os.makedirs(DATA_DIR)
  
-num_classes=6
+num_classes=26     #le nbr totale des signes
 dataset_size=100
 
 cap=cv2.VideoCapture(0)  #on ouvre la caméra 
+
 for j in range(num_classes):       #pour chaque classe
     if not os.path.exists(os.path.join(DATA_DIR, str(j))):       #si le dossier de la classe n'existe pas 
         os.makedirs(os.path.join(DATA_DIR, str(j)))           #on le crée
