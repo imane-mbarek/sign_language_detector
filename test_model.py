@@ -48,7 +48,7 @@ while True:
                 data_aux.append(x - min(x_))
                 data_aux.append(y - min(y_))
 
-        x1 = int(min(x_) * W) - 10
+        x1 = int(min(x_) * W ) - 10
         y1 = int(min(y_) * H) - 10
 
         x2 = int(max(x_) * W) - 10
@@ -65,6 +65,6 @@ while True:
     cv2.imshow('frame', frame)
     cv2.waitKey(1)
 
-
+# je veux ajouter que lorsque je fait une sign avec mes mains le programme s'arrete automatiquement , comme ça on resoudre ce probléme , que il ne s'arrete pas 
 cap.release()
 cv2.destroyAllWindows()
